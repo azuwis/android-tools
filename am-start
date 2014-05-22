@@ -1,2 +1,3 @@
 com.android.settings/.LanguageSettings
 com.android.settings/.Settings\\$PrivacySettingsActivity
+com.android.settings/.Settings\\$DataUsageSummaryActivity
