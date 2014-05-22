@@ -14,4 +14,15 @@ generate() {
   mv settings-$namespace.gen settings-$namespace
 }
 
+pm-enable() {
+  adb shell su -c 'mkdir -p /data/local/userinit.d'
+  adb shell su -c 'chmod 750 /data/local/userinit.d'
+  adb shell su -c "echo '#!/system/bin/sh' > /data/local/userinit.d/00pm-enable"
+  adb shell su -c 'chmod 750 /data/local/userinit.d/00pm-enable'
+  cat pm-enable | while read key; do
+    adb shell su -c "pm enable $key"
+    adb shell su -c "echo pm enable $key >> /data/local/userinit.d/00pm-enable"
+  done
+}
+
 "$@"
