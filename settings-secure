@@ -1,0 +1,4 @@
+adb_notify 0
+advanced_reboot 1
+long_press_timeout 200
+privacy_guard_default 1

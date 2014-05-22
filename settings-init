@@ -1,0 +1,13 @@
+#!/bin/bash
+apply() {
+  namespace=$1
+}
+
+generate() {
+  namespace=$1
+  cat settings-$namespace | while read key value; do
+    echo "$key $(adb shell settings get $namespace $key)" >> settings-$namespace.gen
+  done
+}
+
+generate secure
