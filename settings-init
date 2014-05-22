@@ -9,7 +9,7 @@ apply() {
 generate() {
   namespace=$1
   cat settings-$namespace | while read key value; do
-    echo "$key $(adb shell settings get $namespace $key)" >> settings-$namespace.gen
+    echo "$key $(adb shell settings get $namespace $key | tr -d '\015')" >> settings-$namespace.gen
   done
   mv settings-$namespace.gen settings-$namespace
 }
