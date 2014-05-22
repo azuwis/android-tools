@@ -14,7 +14,7 @@ navigation_ring_targets_0 torch
 navigation_ring_targets_2 power
 power_menu_expanded_desktop_enabled 1
 qs_small_icons 1
-quick_settings_tiles toggleUser|toggleBrightness|toggleSettings|toggleWifi|toggleMobileData|toggleGPS|toggleBattery|toggleBluetooth|toggleAutoRotate|toggleCamera|toggleScreenTimeout|toggleSync
+quick_settings_tiles toggleUser|toggleBrightness|toggleSettings|toggleWifi|toggleMobileData|toggleGPS|toggleBattery|toggleBluetooth|toggleAutoRotate|toggleExpandedDesktop|toggleSync|toggleCompass
 quiet_hours_dim 1
 quiet_hours_enabled 1
 quiet_hours_end 510
@@ -27,7 +27,7 @@ quiet_hours_system 1
 screen_animation_style 1
 screen_off_animation 1
 screen_off_timeout 60000
-status_bar_battery 0
+status_bar_battery 2
 status_bar_battery_show_percent 1
 swap_volume_keys_on_rotation 1
 time_12_24 24
