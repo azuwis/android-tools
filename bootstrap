@@ -25,4 +25,10 @@ pm-enable() {
   done
 }
 
+pm-disable() {
+  cat pm-disable | while read key; do
+    adb shell su -c "pm disable $key"
+  done
+}
+
 "$@"
