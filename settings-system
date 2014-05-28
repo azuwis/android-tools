@@ -38,3 +38,6 @@ volume_key_cursor_control 1
 volume_keys_control_ring_stream 0
 volume_link_notification 0
 volume_wake_screen 1
+phone_blacklist_enabled 1
+phone_blacklist_notify_enabled 1
+phone_blacklist_unknown_number_enabled 16
