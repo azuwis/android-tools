@@ -1,6 +1,7 @@
 accelerometer_rotation_angles 3
 auto_brightness_twilight_adjustment 1
 auto_expanded_desktop 1
+development_shortcut 1
 double_tap_sleep_gesture 1
 edge_service_for_gestures 1
 expanded_desktop_style 2
